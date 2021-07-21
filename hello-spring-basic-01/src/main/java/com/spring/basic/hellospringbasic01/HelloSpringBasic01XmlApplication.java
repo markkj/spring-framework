@@ -15,11 +15,7 @@ public class HelloSpringBasic01XmlApplication {
 		try(ClassPathXmlApplicationContext context =
 					new ClassPathXmlApplicationContext("applicationContext.xml")){
 			System.out.println(context.getBeanDefinitionNames().length);
-//
-
-
 			XmlPersonDAO personDAO = context.getBean(XmlPersonDAO.class);
-
 			System.out.println(personDAO);
 			System.out.println(personDAO.getXmlJdbcConnection());
 		}
