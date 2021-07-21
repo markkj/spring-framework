@@ -12,16 +12,16 @@ public class HelloSpringBasic01XmlApplication {
 
 	public static void main(String[] args) {
 
-		ClassPathXmlApplicationContext context =
-				new ClassPathXmlApplicationContext("applicationContext.xml");
-		System.out.println(context.getBeanDefinitionNames().length);
+		try(ClassPathXmlApplicationContext context =
+					new ClassPathXmlApplicationContext("applicationContext.xml")){
+			System.out.println(context.getBeanDefinitionNames().length);
 //
 
 
-		XmlPersonDAO personDAO = context.getBean(XmlPersonDAO.class);
+			XmlPersonDAO personDAO = context.getBean(XmlPersonDAO.class);
 
-		System.out.println(personDAO);
-		System.out.println(personDAO.getXmlJdbcConnection());
-
+			System.out.println(personDAO);
+			System.out.println(personDAO.getXmlJdbcConnection());
+		}
 	}
 }

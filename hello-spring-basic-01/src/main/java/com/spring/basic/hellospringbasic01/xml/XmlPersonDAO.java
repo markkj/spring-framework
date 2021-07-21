@@ -4,13 +4,13 @@ package com.spring.basic.hellospringbasic01.xml;
 
 public class XmlPersonDAO {
 
-    XmlPersonDAO jdbcConnection;
+    XmlJdbcConnection xmlJdbcConnection;
 
-    public XmlPersonDAO getXmlJdbcConnection() {
-        return jdbcConnection;
+    public XmlJdbcConnection getXmlJdbcConnection() {
+        return xmlJdbcConnection;
     }
 
-    public void setXmlJdbcConnection(XmlPersonDAO jdbcConnection) {
-        this.jdbcConnection = jdbcConnection;
+    public void setXmlJdbcConnection(XmlJdbcConnection xmlJdbcConnection) {
+        this.xmlJdbcConnection = xmlJdbcConnection;
     }
 }
