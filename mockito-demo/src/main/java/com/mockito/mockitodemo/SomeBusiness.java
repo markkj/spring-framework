@@ -3,6 +3,9 @@ package com.mockito.mockitodemo;
 public class SomeBusiness {
     private DataService dataService;
 
+    public SomeBusiness(DataService dataService) {
+        this.dataService = dataService;
+    }
 
     int findTheGreatestFromAllData(){
         int[] data = dataService.retrieveAllData();
