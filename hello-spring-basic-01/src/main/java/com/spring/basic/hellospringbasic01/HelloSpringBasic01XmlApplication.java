@@ -5,6 +5,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.Arrays;
+
 @Configuration
 @ComponentScan
 public class HelloSpringBasic01XmlApplication {
@@ -18,6 +20,8 @@ public class HelloSpringBasic01XmlApplication {
 			XmlPersonDAO personDAO = context.getBean(XmlPersonDAO.class);
 			System.out.println(personDAO);
 			System.out.println(personDAO.getXmlJdbcConnection());
+
+			System.out.println(Arrays.toString(context.getBeanDefinitionNames()));
 		}
 	}
 }
