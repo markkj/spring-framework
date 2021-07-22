@@ -10,7 +10,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
-@ContextConfiguration(classes = HelloSpringBasic01Application.class)
+//@ContextConfiguration(classes = HelloSpringBasic01Application.class)
+@ContextConfiguration(locations = "/testContext.xml")
 public class BinarySearchTest {
 
     @Autowired
@@ -19,7 +20,7 @@ public class BinarySearchTest {
     @Test
     public void testBasicScenario(){
         int result = binarySearch.binarySearch(new int[]{},4);
-        assertEquals(2,result);
+        assertEquals(3,result);
 
     }
 
