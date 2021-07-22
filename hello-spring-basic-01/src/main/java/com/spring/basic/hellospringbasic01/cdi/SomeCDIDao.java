@@ -6,4 +6,9 @@ import org.springframework.stereotype.Component;
 public class SomeCDIDao {
 
 
+
+    public int[] getData(){
+        return new int[]{5,89,100};
+    }
+
 }
