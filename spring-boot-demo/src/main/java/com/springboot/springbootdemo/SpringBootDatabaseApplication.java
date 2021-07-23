@@ -1,8 +1,8 @@
 package com.springboot.springbootdemo;
 
 
-import com.springboot.springbootdemo.person.Person;
-import com.springboot.springbootdemo.person.PersonJdbcDao;
+import com.springboot.springbootdemo.jdbc.person.Person;
+import com.springboot.springbootdemo.jdbc.person.PersonJdbcDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import javax.xml.crypto.Data;
 import java.util.Date;
 
 @SpringBootApplication

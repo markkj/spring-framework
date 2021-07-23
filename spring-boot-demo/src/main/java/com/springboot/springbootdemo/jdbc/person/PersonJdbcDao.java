@@ -1,4 +1,4 @@
-package com.springboot.springbootdemo.person;
+package com.springboot.springbootdemo.jdbc.person;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
