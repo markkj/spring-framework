@@ -12,15 +12,10 @@ import java.io.PrintWriter;
 public class LoginServlet extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        PrintWriter out = resp.getWriter();
-        out.println("<html>");
-        out.println("<head>");
-        out.println("<title>Hello</title>");
-        out.println("</head>");
-        out.println("<body>");
-        out.println("My first web application");
-        out.println("</body>");
-        out.println("</head>");
+    protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
+
+        String name = request.getParameter("name");
+        request.setAttribute("name", name);
+        request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, resp);
     }
 }
