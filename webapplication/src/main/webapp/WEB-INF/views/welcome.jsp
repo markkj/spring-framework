@@ -6,8 +6,9 @@
 </head>
 
 <body>
-Welcome
+Welcome ${name} :D
 
+Password ${password}
 
 
 </body>

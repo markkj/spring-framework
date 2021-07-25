@@ -1,5 +1,8 @@
 package com.jee;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class LoginService {
 
     public boolean isUserValid(String username,String password){
