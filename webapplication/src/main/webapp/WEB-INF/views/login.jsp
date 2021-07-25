@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <title>Login page</title>
 </head>
+
 <body>
 My First JSP
-name = ${name}
+
+
+<form action="/login.do" method="post">
+    Enter your name <input type="text" name="name" />
+    Enter your password <input type="password" name="password" />
+    <input type="submit" value="login"/>
+</form>
 </body>
 </html>
